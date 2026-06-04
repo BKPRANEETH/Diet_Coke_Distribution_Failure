@@ -1,0 +1,103 @@
+{
+  "measure": {
+    "n_order_lines": 71195,
+    "n_days": 151,
+    "date_range": [
+      "2026-01-01",
+      "2026-05-31"
+    ],
+    "overall_otif": 0.7213,
+    "pre_crisis_otif": 0.8921,
+    "crisis_otif": 0.4218,
+    "lowsugar_pre_otif": 0.8883,
+    "lowsugar_crisis_otif": 0.208,
+    "target_otif": 0.95,
+    "baseline_gap_vs_target_pp": 5.8,
+    "fill_rate_overall": 0.8915,
+    "fill_rate_lowsugar_crisis": 0.6002,
+    "lowsugar_pre_sigma": 2.72,
+    "lowsugar_crisis_sigma": 0.69,
+    "lowsugar_crisis_dpmo": 791961
+  },
+  "analyze": {
+    "failure_pareto_crisis": {
+      "Packaging (aluminium can) unavailability": 12974,
+      "Late dispatch from DC": 728,
+      "Route / traffic delay": 561,
+      "Vehicle unavailability": 357,
+      "Order/picking error": 145,
+      "DC stock-out (forecast miss)": 117,
+      "Damage / quality rejection": 69
+    },
+    "top_reason": "Packaging (aluminium can) unavailability",
+    "top_reason_share": 0.8678,
+    "otif_by_packformat": {
+      "Pre-crisis": {
+        "CAN": 0.8899,
+        "PET": 0.8946
+      },
+      "Crisis": {
+        "CAN": 0.03,
+        "PET": 0.8461
+      }
+    },
+    "chi2_packformat_otif": {
+      "chi2": 17623.1,
+      "p_value": 0.0,
+      "dof": 1,
+      "interpretation": "pack format is significantly associated with OTIF failure"
+    },
+    "otif_by_channel_crisis": {
+      "Quick-Commerce": 0.3828,
+      "Modern-Trade": 0.3894,
+      "HoReCa": 0.4381,
+      "General-Trade": 0.4708
+    },
+    "crisis_fill_rate_by_sku": {
+      "DC-CAN-250": 0.4876,
+      "CZ-CAN-300": 0.4909,
+      "DC-CAN-300": 0.4937,
+      "CC-CAN-300": 0.5369,
+      "CZ-PET-750": 0.9915,
+      "DC-PET-750": 0.9917,
+      "CC-PET-750": 0.9938,
+      "TU-PET-750": 0.9941
+    },
+    "crisis_lost_margin_inr": 18265070,
+    "crisis_lost_revenue_inr": 59061130,
+    "lost_margin_by_reason_inr": {
+      "Packaging (aluminium can) unavailability": 18089996,
+      "Order/picking error": 75576,
+      "DC stock-out (forecast miss)": 63218,
+      "Damage / quality rejection": 36280,
+      "Late dispatch from DC": 0,
+      "Route / traffic delay": 0,
+      "Vehicle unavailability": 0
+    }
+  },
+  "improve": {
+    "can_shortfall_cases": 113853,
+    "can_shortfall_margin_inr": 18089996,
+    "lever_recovered_margin_inr": {
+      "PET / glass pack diversification (Diet Coke 750ml PET, 250ml glass)": 6331498,
+      "Dynamic substitution playbook (auto-offer Coke Zero PET when can OOS)": 4522499,
+      "Strategic can buffer stock (4\u20136 wk) + qualified 2nd supplier": 3617999
+    },
+    "total_recoverable_margin_inr": 14471996,
+    "total_recoverable_share": 0.8,
+    "lowsugar_crisis_otif_after": 0.8107,
+    "structural_target_otif": 0.95
+  },
+  "control": {
+    "pre_crisis_defect_rate": 0.1117,
+    "ucl": 0.1712,
+    "lcl": 0.0523,
+    "days_out_of_control": 46,
+    "early_warning_signals": [
+      "Aluminium spot price index (LME + India premium) breaching +10% MoM",
+      "Inbound can lead-time > 21 days",
+      "Can days-of-cover < 14 days at depot",
+      "Quick-commerce sell-out (OOS%) > 5% on Diet Coke SKUs"
+    ]
+  }
+}

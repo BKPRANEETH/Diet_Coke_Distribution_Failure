@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diet Coke Bangalore OTIF — DMAIC Dashboard</title>
+<style>
+  :root{--red:#D6202B;--dark:#1A1A2E;--grey:#6b7280;--green:#1B998B;--bg:#f5f5f7;--card:#fff;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--dark);line-height:1.5;}
+  header{background:linear-gradient(120deg,var(--dark),#2d2d4a);color:#fff;padding:28px 32px;}
+  header h1{font-size:1.5rem;font-weight:700;}
+  header p{opacity:.8;font-size:.9rem;margin-top:6px;max-width:880px;}
+  .tag{display:inline-block;background:var(--red);color:#fff;font-size:.7rem;font-weight:700;
+       padding:3px 10px;border-radius:20px;letter-spacing:.5px;margin-bottom:10px;}
+  .wrap{max-width:1180px;margin:0 auto;padding:24px 32px 60px;}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:24px 0;}
+  .kpi{background:var(--card);border-radius:14px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.08);
+       border-left:4px solid var(--red);}
+  .kpi .v{font-size:1.7rem;font-weight:800;}
+  .kpi .l{font-size:.78rem;color:var(--grey);margin-top:4px;}
+  .kpi.good{border-left-color:var(--green);}
+  .kpi.dark{border-left-color:var(--dark);}
+  section{background:var(--card);border-radius:14px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+  section h2{font-size:1.05rem;margin-bottom:6px;}
+  section p.sub{color:var(--grey);font-size:.85rem;margin-bottom:14px;}
+  img{width:100%;border-radius:8px;border:1px solid #eee;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  table{width:100%;border-collapse:collapse;font-size:.85rem;margin-top:8px;}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #eee;}
+  th{color:var(--grey);font-weight:600;}
+  .note{background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:14px 16px;font-size:.82rem;color:#7c2d12;}
+  footer{text-align:center;color:var(--grey);font-size:.78rem;padding:20px;}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header>
+  <span class="tag">LEAN SIX SIGMA · DMAIC · GREEN BELT</span>
+  <h1>Diet Coke Bangalore Distribution Failure — OTIF Resilience Dashboard</h1>
+  <p>Analysis of the real April-2026 aluminium-can shortage that collapsed Diet Coke distribution in Bengaluru.
+     Transactional data is a transparent, benchmark-calibrated simulation of a real, cited event.</p>
+</header>
+<div class="wrap">
+
+  <div class="kpis">
+    <div class="kpi dark"><div class="v">88.8%</div><div class="l">Pre-crisis OTIF (low-sugar)</div></div>
+    <div class="kpi"><div class="v">20.8%</div><div class="l">Crisis OTIF (low-sugar)</div></div>
+    <div class="kpi"><div class="v">86.8%</div><div class="l">Failures from one cause (can OOS)</div></div>
+    <div class="kpi"><div class="v">₹1.83 cr</div><div class="l">Margin lost in 6 weeks</div></div>
+    <div class="kpi good"><div class="v">₹1.45 cr</div><div class="l">Recoverable (80%)</div></div>
+    <div class="kpi good"><div class="v">81.1%</div><div class="l">OTIF after interventions</div></div>
+  </div>
+
+  <section>
+    <h2>1. The collapse — service over time</h2>
+    <p class="sub">Stable ~89% for Q1, then a sharp, sustained drop from the 15-Apr can-supply shock.</p>
+    <img src="../reports/figures/01_otif_timeseries.png" alt="OTIF time series">
+  </section>
+
+  <div class="grid2">
+    <section>
+      <h2>2. One root cause dominates</h2>
+      <p class="sub">Pareto of crisis failure reasons.</p>
+      <img src="../reports/figures/02_pareto_failures.png" alt="Pareto">
+    </section>
+    <section>
+      <h2>3. Pack format is the fault line</h2>
+      <p class="sub">CAN 3% vs PET 85% (χ²=17,623, p&lt;0.001).</p>
+      <img src="../reports/figures/03_otif_by_packformat.png" alt="OTIF by pack format">
+    </section>
+  </div>
+
+  <div class="grid2">
+    <section>
+      <h2>4. Crisis fill rate by SKU</h2>
+      <p class="sub">Every CAN SKU collapses; every PET SKU holds.</p>
+      <img src="../reports/figures/05_fillrate_by_sku.png" alt="Fill rate by SKU">
+    </section>
+    <section>
+      <h2>5. Crisis OTIF by channel</h2>
+      <p class="sub">Quick-commerce &amp; modern trade hit hardest.</p>
+      <img src="../reports/figures/04_otif_by_channel.png" alt="OTIF by channel">
+    </section>
+  </div>
+
+  <div class="grid2">
+    <section>
+      <h2>6. Recovery scenario</h2>
+      <p class="sub">Baseline → crisis → after interventions → target.</p>
+      <img src="../reports/figures/06_improve_scenario.png" alt="Improvement scenario">
+    </section>
+    <section>
+      <h2>7. Recoverable margin</h2>
+      <p class="sub">80% of the controllable loss, by lever.</p>
+      <img src="../reports/figures/07_recoverable_waterfall.png" alt="Recoverable waterfall">
+    </section>
+  </div>
+
+  <section>
+    <h2>8. Control — holding the gains</h2>
+    <p class="sub">p-chart of daily OTIF-failure rate; 46 days out of control during the crisis.</p>
+    <img src="../reports/figures/08_pchart_control.png" alt="p-chart">
+  </section>
+
+  <section>
+    <h2>Prioritised interventions (RICE)</h2>
+    <table>
+      <tr><th>#</th><th>Intervention</th><th>RICE</th><th>Recovers</th><th>Effort</th></tr>
+      <tr><td>1</td><td>Dynamic substitution playbook (auto-offer Coke Zero PET when can OOS)</td><td>28.8</td><td>₹0.45 cr</td><td>Low</td></tr>
+      <tr><td>2</td><td>Pack-format diversification (Diet Coke 750ml PET + 250ml glass)</td><td>10.1</td><td>₹0.63 cr</td><td>Medium</td></tr>
+      <tr><td>3</td><td>Can buffer (4–6 wk) + qualified 2nd supplier + early-warning index</td><td>6.5</td><td>₹0.36 cr</td><td>Med-High</td></tr>
+    </table>
+  </section>
+
+  <div class="note">
+    <strong>Data honesty.</strong> Macro facts (the April-2026 shortage, its cause, demand-mix shift) are real and cited in
+    <code>docs/references.md</code>. The order-line dataset is a calibrated <em>simulation</em> — not real Coca-Cola data.
+    Method conclusions are robust; absolute rupee figures are illustrative.
+  </div>
+</div>
+<footer>Built as a Lean Six Sigma Green Belt portfolio project · DMAIC · Python · github.com/BKPRANEETH</footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+sku_id,sku_name,brand,sugar_type,pack_format,base_cases_per_day,net_realization_per_case,contrib_margin_per_case
+DC-CAN-300,Diet Coke 300ml Can,Diet Coke,Zero,CAN,34,540,168
+DC-CAN-250,Diet Coke 250ml Can,Diet Coke,Zero,CAN,18,470,150
+CZ-CAN-300,Coke Zero 300ml Can,Coke Zero,Zero,CAN,26,520,160
+CZ-PET-750,Coke Zero 750ml PET,Coke Zero,Zero,PET,16,430,132
+DC-PET-750,Diet Coke 750ml PET,Diet Coke,Zero,PET,6,450,138
+CC-PET-750,Coca-Cola 750ml PET,Coca-Cola,Reg,PET,40,360,104
+TU-PET-750,Thums Up 750ml PET,Thums Up,Reg,PET,38,350,100
+CC-CAN-300,Coca-Cola 300ml Can,Coca-Cola,Reg,CAN,22,500,150
