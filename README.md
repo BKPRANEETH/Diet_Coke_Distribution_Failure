@@ -50,7 +50,10 @@ This collides with a second fact: **low-sugar is no longer niche in India.** Zer
 | **Improve** | Three prioritised interventions + counterfactual recovery simulation | Figs 06–07 |
 | **Control** | p-chart, control plan, early-warning supply-risk dashboard | Fig 08, [`docs/control_plan.md`](docs/control_plan.md) |
 
-**Frameworks used (and why):** Pareto (to prove one cause dominates), Fishbone + 5-Whys (to trace can OOS to single-format + single-region sourcing), **FMEA** (to rank residual supply risks), **RICE** (to prioritise interventions), and unit-economics / contribution-margin bridges (to quantify impact). Frameworks are applied only where they earn their place — rationale is given in the [DMAIC report](reports/DMAIC_Report.md).
+**Frameworks used (and why):** Pareto (to prove one cause dominates), Fishbone + 5-Whys (to trace can OOS to single-format + single-region sourcing), **FMEA** (to rank residual supply risks), **RICE** (to prioritise interventions), and unit-economics / contribution-margin bridges (to quantify impact). Frameworks are applied only where they earn their place — rationale is given in the [DMAIC report]
+<img width="1413" height="633" alt="04_fishbone" src="https://github.com/user-attachments/assets/f2764587-330d-46e6-aebd-cd725f3422ea" />
+
+(reports/DMAIC_Report.md).
 
 ---
 
