@@ -5,7 +5,7 @@
 | **Project title** | Improving Diet Coke / low-sugar OTIF and packaging-supply resilience, Bangalore |
 | **Belt / methodology** | Lean Six Sigma Green Belt — DMAIC |
 | **Business case** | A real April-2026 aluminium-can shortage collapsed Diet Coke distribution in Bengaluru. A high-growth low-sugar portfolio is exposed to a single-pack-format supply shock, destroying service and margin. |
-| **Problem statement** | Low-sugar OTIF in the Bangalore secondary network is structurally exposed to can-supply shocks; quantify the impact, isolate the root cause, and design Green-Belt-executable resilience fixes. |
+| **Problem statement** | Low-sugar OTIF in the Bangalore secondary network is structurally exposed to can-supply shocks; quantify the impact, isolate the root cause, and design Green-Belt-executable resilience fixes. Improve the OTIF percent back to 80+% to sustain losses. |
 | **Goal statement** | Restore crisis OTIF from 20.8% toward an 81%+ achievable level and a 95% structural target; recover ≥75% of controllable margin loss; install controls to prevent recurrence. |
 | **CTQ** | OTIF (On-Time AND In-Full) at order-line level |
 | **In scope** | Diet Coke + Coke Zero (low-sugar) secondary distribution, Bangalore, Jan–May 2026 |
