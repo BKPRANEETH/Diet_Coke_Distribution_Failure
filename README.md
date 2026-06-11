@@ -10,7 +10,7 @@
 
 ---
 
-## 1. The business problem (real and recent)
+## 1. The business problem 
 
 From **mid-April 2026**, Diet Coke disappeared from shelves and quick-commerce apps across **Bengaluru, Mumbai, Ahmedabad, Gurugram and Pune**. The cause was *not* weak demand — it was **packaging**: a shortage of aluminium cans driven by the Strait-of-Hormuz / Gulf aluminium disruption (~9% of global aluminium output). The failure was amplified by a structural vulnerability — **Diet Coke is sold almost entirely in cans**, with minimal PET or glass presence, so a single packaging shock translated directly into a distribution collapse. Coca-Cola was reported to be **rationing supply and not fulfilling some distributor orders**. (Sources: Business Standard, Outlook Business, Reuters, Packaging South Asia — see [`docs/references.md`](docs/references.md).)
 
